@@ -1,13 +1,5 @@
 import * as vscode from 'vscode';
 import * as child_process from 'child_process';
-import * as path from 'path';
-const commandlist = [
-  "import pyautogui",
-  "pyautogui.press('WIN')",
-  "pyautogui.moveTo(25,1000)",
-  "pyautogui.click()",
-  "pyautogui.moveTo(25,900)"
-];
 
 export function activate(context: vscode.ExtensionContext) {
   let disposable = vscode.commands.registerCommand('yep--.doThing', () => {
