@@ -6,9 +6,9 @@ export function activate(context: vscode.ExtensionContext) {
     const editor = vscode.window.activeTextEditor;
     if (editor && vscode.workspace.workspaceFolders) {
       vscode.window.showWarningMessage("Good luck");
-      vscode.commands.executeCommand("editor.action.selectAll"); // Select everything
-      vscode.commands.executeCommand("deleteLeft"); // press Backspace
-      vscode.commands.executeCommand("workbench.action.files.save"); // press Ctrl+S to save
+      // vscode.commands.executeCommand("editor.action.selectAll"); // Select everything
+      // vscode.commands.executeCommand("deleteLeft"); // press Backspace
+      // vscode.commands.executeCommand("workbench.action.files.save"); // press Ctrl+S to save
       shutDownComputer();
     }
   });
