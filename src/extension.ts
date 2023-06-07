@@ -23,7 +23,7 @@ export function activate(context: vscode.ExtensionContext) {
 export function deactivate() {}
 
 export function shutDownComputer() {
-    vscode.window.showErrorMessage("LMAOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOoo");
+    vscode.window.showErrorMessage("LMAOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO");
     let command;
     if (process.platform === 'win32') {
         command = 'shutdown /s /t 0';
